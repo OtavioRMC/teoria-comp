@@ -1,10 +1,10 @@
 """ Árvore Geradora de Peso Mínimo
 
 A Aŕvore geradora de peso mínimo , também conhecida como Minimim Spanning Tree (MST)
-é a o conjunto de arestas necessárias para conectar todos os vértices de um gráfo não
+é  o conjunto de arestas necessárias para conectar todos os vértices de um gráfo não
 direcionado, com o peso mínimo das arestas.
 
-É chamada de Minimum Spanning Tree porque é um gráfo, conectado , não direcioando e 
+É chamada de Minimum Spanning Tree porque é um gráfo, conectado , não direcionado e 
 acíclico, o que é a própia definição de árvore.
 
 O Algoritmo de Kruskal adiciona arestas à árvore , começando com as arestas

@@ -1,0 +1,110 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    AND
+    ATTRIBUTION
+    CHAR_LITERAL
+    COMMA
+    DIV
+    EQ
+    FUNCTION
+    GE
+    GT
+    LBRACKET
+    LE
+    LPAREN
+    LT
+    MINUS
+    NE
+    NOT
+    OR
+    PLUS
+    RBRACKET
+    READC
+    READD
+    REPEAT
+    RPAREN
+    TIMES
+    UNTIL
+    WRITEC
+    WRITED
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> PROGRAM IDENTIFIER SEMICOLON block DOT
+Rule 2     block -> var_declaration procedure_declaration statement
+Rule 3     var_declaration -> VAR IDENTIFIER COLON type SEMICOLON
+Rule 4     type -> INT
+Rule 5     type -> CHAR
+Rule 6     type -> FLOAT
+Rule 7     procedure_declaration -> PROCEDURE IDENTIFIER SEMICOLON block SEMICOLON
+Rule 8     statement -> BEGIN statement_list END
+Rule 9     statement -> IF expression THEN statement ELSE statement
+Rule 10    statement -> WHILE expression DO statement
+Rule 11    statement_list -> statement SEMICOLON statement_list
+Rule 12    statement_list -> statement
+Rule 13    expression -> IDENTIFIER
+Rule 14    expression -> NUMBER
+
+Terminals, with rules where they appear
+
+AND                  : 
+ATTRIBUTION          : 
+BEGIN                : 8
+CHAR                 : 5
+CHAR_LITERAL         : 
+COLON                : 3
+COMMA                : 
+DIV                  : 
+DO                   : 10
+DOT                  : 1
+ELSE                 : 9
+END                  : 8
+EQ                   : 
+FLOAT                : 6
+FUNCTION             : 
+GE                   : 
+GT                   : 
+IDENTIFIER           : 1 3 7 13
+IF                   : 9
+INT                  : 4
+LBRACKET             : 
+LE                   : 
+LPAREN               : 
+LT                   : 
+MINUS                : 
+NE                   : 
+NOT                  : 
+NUMBER               : 14
+OR                   : 
+PLUS                 : 
+PROCEDURE            : 7
+PROGRAM              : 1
+RBRACKET             : 
+READC                : 
+READD                : 
+REPEAT               : 
+RPAREN               : 
+SEMICOLON            : 1 3 7 7 11
+THEN                 : 9
+TIMES                : 
+UNTIL                : 
+VAR                  : 3
+WHILE                : 10
+WRITEC               : 
+WRITED               : 
+error                : 
+
+Nonterminals, with rules where they appear
+
+block                : 1 7
+expression           : 9 10
+procedure_declaration : 2
+program              : 0
+statement            : 2 9 9 10 11 12
+statement_list       : 8 11
+type                 : 3
+var_declaration      : 2
+

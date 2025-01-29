@@ -1,6 +1,5 @@
 from MinimumSpanningTree.graph import Graph
 
-
 g = Graph(7)
 g.add_vertex_data(0, 'A')
 g.add_vertex_data(1, 'B')
